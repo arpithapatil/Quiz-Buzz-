@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<title>Quiz on Javascript</title>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1 align="center">Welcome to Quiz on Javascript</h1>
+    <h2>Instructions : The quiz consists of five questions. Each question in the quiz is of multiple-choice format.
+        Read each question carefully, and click on the button next to your response.The total score for the quiz
+        is based on your responses to all questions. You can look for the answers of the quiz once you finish your quiz.</h2>
+    <h3 align="center">All the best!!</h3>
+    
+   <input id="firstbutton" type="button" value="Start Quiz" onclick="dothis();">
+ <hr>
+    <form id="quiz" name="quiz">
+        <p>1. How do you write if statement in JavaScript?</p>
+        <input id="mc" type="radio" name="question1" value="if (i == 5) then">if (i == 5) then<br>
+        <input id="mc" type="radio" name="question1" value="if i == 5 then">if i == 5 then<br>
+        <input id="mc" type="radio" name="question1" value="if (i === 5)">if (i === 5)<br>
+        <input id="mc" type="radio" name="question1" value="if i = 5">if i = 5<br>
+        <p>2. How does a for loop start in JavaScript?</p>
+        <input id="mc" type="radio" name="question2" value="for i = 1 to 5">for i = 1 to 5<br>
+        <input id="mc" type="radio" name="question2" value="for( i = 0; i <= 5)">for( i = 0; i <= 5 )<br>
+        <input id="mc" type="radio" name="question2" value="for( i <= 5; i++)">for( i <= 5; i++ )<br>
+        <input id="mc" type="radio" name="question2" value="for ( i = 0; i <= 5; i++)">for( i = 0; i <= 5; i++ )<br> 
+        <p>3. How do you round the number 6.26, to the nearest integer?</p>
+        <input id="mc" type="radio" name="question3" value="round (6.26)">round (6.26)<br>
+        <input id="mc" type="radio" name="question3" value="rnd (6.26)">rnd (6.26)<br>
+        <input id="mc" type="radio" name="question3" value="Math.round (6.26)">Math.round (6.26)<br>
+        <input id="mc" type="radio" name="question3" value="Math.rnd (6.26)">Math.rnd (6.26)<br>
+        <p>4. How do you find the number with the highest value of x and y?</p>
+        <input id="mc" type="radio" name="question4" value="top (x,y)">top (x,y)<br>
+        <input id="mc" type="radio" name="question4" value="ciel (x,y)">ciel (x,y)<br>
+        <input id="mc" type="radio" name="question4" value="Math.ciel (x,y)">Math.ciel (x,y)<br>
+        <input id="mc" type="radio" name="question4" value="Math.max (x,y)">Math.max (x,y)<br>
+        <p>5. How do you declare a javascript variable?</p>
+        <input id="mc" type="radio" name="question5" value="var carName">var carName<br>
+        <input id="mc" type="radio" name="question5" value="variable carName">variable carName<br>
+        <input id="mc" type="radio" name="question5" value="var = carName">var = carName<br>
+        <input id="mc" type="radio" name="question5" value="variable = car">variable = car<br>
+        <input id="secondbutton" type="button" value="I'm Done" onclick="check();">
+
+        </form>
+ 
+       <div id ="after_submit">
+            <p id="impressions"></p>
+            <p id ="number_correct"></p>
+            <img id="pictures">
+            <input id ="thirdbutton" type="button" value="Click here for Answers">
+                </div>
+        <div id="answers">
+            <h4 align="center">Answers for the quiz</h4>
+            <p> 1. How do you write if statement in JavaScript?</p>
+            <p> Answer: if (i === 5)</p>
+            <p>2. How does a for loop start in JavaScript?</p>
+            <p> Answer: for ( i = 0; i <= 5; i++)</p>
+            <p>3. How do you round the number 6.26, to the nearest integer?</p>
+            <p> Answer: Math.round (6.26)</p>
+            <p>4. How do you find the number with the highest value of x and y?</p>
+            <p> Answer: Math.max (x,y)</p>
+            <p>5. How do you declare a javascript variable?</p>
+            <p> Answer: var carName</p>
+            </div>
+        </div>
+    </body>
+</html>
